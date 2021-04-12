@@ -26,7 +26,7 @@ Now run
 ```
 npm run gen
 ```
-This will create a userScript script in the `temperMonkey/script/` folder. 
+This will create a userScript in the `temperMonkey/script/` folder. 
 
 Import the generated script in the temperMonkey dashboard.
 
