@@ -7,10 +7,11 @@ const FileManager = require("../utils/FileManager");
     const userScriptFilePath = `${__dirname}/script/userScript.js`;
     const userScript = config.get("UserScript");
     console.log(`File Path `, filePath);
-    const content = `/* COPY & PASTE THE CODE IN A NEW TEMPER MONKEY SCRIPT */
-    
+    const content = `
                     // ==UserScript==
-                    // @name         ${userScript.title}
+                    // @name         ${
+                      userScript.title || Date.now() + "_userScript"
+                    }
                     // @namespace    http://tampermonkey.net/
                     // @version      0.1
                     // @description  ${userScript.description}

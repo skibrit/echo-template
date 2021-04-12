@@ -15,7 +15,7 @@ Next Add the configuration of the project in `config/default.json` file
     "title": "New UserScript",
     "websiteURL": "*://*/*",
     "description": "A new UserScript for hot reloading",
-    "icon": "https://www.google.com/s2/favicons?domain=stackoverflow.com",
+    "icon": "https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png",
     "grant": "none",
     "author": "you"
   }
@@ -29,3 +29,9 @@ npm run gen
 This will create a userScript script in the `temperMonkey/script/` folder. 
 
 Import the generated script in the temperMonkey dashboard.
+
+Install the LiveReload Extension from [chromeStore](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en)
+
+Install the LiveReload Server from [here](http://livereload.com/) and include the project location.
+
+All Done.

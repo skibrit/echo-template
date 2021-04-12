@@ -1,7 +1,7 @@
 {
   "Project_Type": 1,
   "UserScript": {
-    "title": "New UserScript",
+    "title": "",
     "websiteURL": "*://*/*",
     "description": "A new UserScript for hot reloading",
     "icon": "https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png",
