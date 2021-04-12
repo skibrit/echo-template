@@ -1,11 +1,11 @@
-// basic
-require("../js/basicStructure");
+const config = require("config");
+const projectType = config.get("Project_Type");
+const structureFiles = [
+  "../src/basicStructure",
+  "../src/basicStructure-jQuery",
+  "../src/basicStructure - Optimizely",
+  "../src/basicStructure - DY",
+];
 
-// basic + jquery
-require("../js/basicStructure-jQuery");
-
-// basic + optimizely
-require("../js/basicStructure - Optimizely");
-
-// basic + dy
-require("../js/basicStructure - DY");
+// [1 = "basic" || 2 = "basic + jquery" || 3 = "basic + optimizely" || 4 = "basic + dy"]
+require(structureFiles[projectType - 1]);

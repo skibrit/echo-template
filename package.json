@@ -1,0 +1,22 @@
+{
+  "name": "echo-template",
+  "version": "1.0.0",
+  "description": "A template starter for dom manipulation projects",
+  "main": "index.js",
+  "scripts": {
+    "gen": "node temperMonkey/userScriptGenerator.js",
+    "watch": "nodemon --config ./config/nodemon.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-skibrit:skibrit/echo-template.git"
+  },
+  "author": "Saidul Amin",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^3.3.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

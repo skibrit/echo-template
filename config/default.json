@@ -1,0 +1,11 @@
+{
+  "Project_Type": 1,
+  "UserScript": {
+    "title": "New UserScript",
+    "websiteURL": "*://*/*",
+    "description": "A new UserScript for hot reloading",
+    "icon": "https://www.google.com/s2/favicons?domain=stackoverflow.com",
+    "grant": "none",
+    "author": "you"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "exec": "npm run gen",
+  "verbose": true,
+  "ignore": ["node_modules","src","temperMonkey/script"],
+  "signal": "SIGINT"
+}
