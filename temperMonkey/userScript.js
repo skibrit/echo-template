@@ -1,4 +1,4 @@
-/* COPY & PASTE THE CODE IN A NEW TEMPER MONKEY SCRIP */
+/* COPY & PASTE THE CODE IN A NEW TEMPER MONKEY SCRIPT */
 /* ADD tempermonkey/root.js file location in the require tag */
 /* ADD website url in the match url */
 
