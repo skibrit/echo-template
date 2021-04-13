@@ -12,10 +12,11 @@ const structureFiles = [
 (async function () {
   try {
     const pType = config.get("Project_Type") - 1;
+    const scriptFolder = config.get("useBabel") ? 'dist' : 'src';
     const filePath = path.join(
       __dirname,
       `../`,
-      `src/${structureFiles[pType]}.js`
+      `${scriptFolder}/${structureFiles[pType]}.js`
     );
     const dirName = `${__dirname}/script`;
     const userScriptFilePath = `${dirName}/userScript.js`;

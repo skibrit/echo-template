@@ -1,5 +1,6 @@
 {
   "Project_Type": 1,
+  "useBabel": false,
   "UserScript": {
     "title": "",
     "websiteURL": "*://*/*",

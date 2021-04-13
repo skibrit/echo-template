@@ -1,6 +1,6 @@
 {
-  "exec": "npm run gen",
+  "exec": "npm run build",
   "verbose": true,
-  "ignore": ["node_modules","src","temperMonkey/script"],
+  "watch": ["src"],
   "signal": "SIGINT"
 }
