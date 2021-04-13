@@ -11,6 +11,7 @@ Next Add the configuration of the project in `config/default.json` file
 ```
 {
   "Project_Type": 1  //Type of the project,
+  "useBabel": false, // Set true to use babel 
   "UserScript": { // user script configuration
     "title": "New UserScript",
     "websiteURL": "*://*/*",
@@ -27,6 +28,8 @@ Now run
 npm run gen
 ```
 This will create a userScript in the `temperMonkey/script/` folder. 
+
+If `useBabel` is set to `True` then run `npm run watch` to generate dist folder and compile the source files
 
 Import the generated script in the temperMonkey dashboard.
 
