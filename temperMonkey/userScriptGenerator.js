@@ -4,9 +4,9 @@ const FileManager = require("../utils/FileManager");
 (async function () {
   try {
     const filePath = `${__dirname}\\root.js`;
-    const userScriptFilePath = `${__dirname}/script/userScript.js`;
+    const dirName = `${__dirname}/script`;
+    const userScriptFilePath = `${dirName}/userScript.js`;
     const userScript = config.get("UserScript");
-    console.log(`File Path `, filePath);
     const content = `
                     // ==UserScript==
                     // @name         ${
@@ -22,6 +22,7 @@ const FileManager = require("../utils/FileManager");
                     // @grant        ${userScript.grant}
                     // ==/UserScript==
                   `;
+    await FileManager.createDirectory(dirName);
     const result = await FileManager.writeFile(userScriptFilePath, content);
     if (result) {
       console.log(`User Script Has been generated Successfully`);
