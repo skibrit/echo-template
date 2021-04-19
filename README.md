@@ -1,7 +1,7 @@
 # Echo - Template
 This is a template startup for the dom manipulation projects
 
-## Instructions
+## Instructions For Hot Reload
 First run 
 ```
 npm i
@@ -37,8 +37,11 @@ Install the LiveReload Extension from [chromeStore](https://chrome.google.com/we
 
 Install the LiveReload Server from [here](http://livereload.com/) and include the project location.
 
-To use Scss write run `npm run css` and then write scss code on the `src/styles/main.scss` file. It will be compiled into `main.css file also the js file will be updated with the latest css.
 
+### SCSS 
+To use Scss write run `npm run css` and then write scss code on the `src/styles/main.scss` file. It will be compiled into `main.css` file also the js file will be updated with the latest css.
+
+### CSS 
 If you don't want to use scss then just write css in the `main.css` it will also update the latest css on the js file.
 
 All Done.
