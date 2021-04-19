@@ -44,3 +44,11 @@ To use Scss write run `npm run css` and then write scss code on the `src/styles/
 ### CSS 
 If you don't want to use scss then just write css in the `main.css` it will also update the latest css on the js file.
 
+### Update Git Remote Url
+to view the current git remote origin type
+
+`git config --get remote.origin.url`
+
+Update git remote url to your repo url
+
+`git remote set-url origin your-repo-url`
