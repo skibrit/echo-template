@@ -44,4 +44,3 @@ To use Scss write run `npm run css` and then write scss code on the `src/styles/
 ### CSS 
 If you don't want to use scss then just write css in the `main.css` it will also update the latest css on the js file.
 
-All Done.
