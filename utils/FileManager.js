@@ -29,7 +29,23 @@ const writeFile = (destPath, data) => {
   });
 };
 
+const readFile = (filePath, encodeType = "utf8") => {
+  return new Promise((resolve, reject) => {
+    try {
+      fs.readFile(filePath, encodeType, function (err, data) {
+        if (err) {
+          reject(err);
+        }
+        resolve(data);
+      });
+    } catch (e) {
+      reject(e);
+    }
+  });
+};
+
 module.exports = {
   writeFile,
   createDirectory,
+  readFile,
 };

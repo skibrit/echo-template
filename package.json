@@ -4,8 +4,12 @@
   "description": "A template starter for dom manipulation projects",
   "main": "index.js",
   "scripts": {
-    "gen": "node temperMonkey/userScriptGenerator.js",
-    "watch": "nodemon --config ./config/nodemon.config.json",
+    "gen": "node generators/userScriptGenerator.js",
+    "babel-watch": "nodemon --config ./config/nodemon.config.json",
+    "css-watch": "nodemon --watch src/styles/main.css --exec npm run update-css",
+    "update-css": "node generators/updateCssWatcher.js",
+    "compile-css": "node-sass --output-style expanded --watch src/styles/main.scss -o src/styles/",
+    "css": "npm-run-all --parallel compile-css css-watch",
     "build": "babel src -d dist"
   },
   "repository": {
@@ -16,12 +20,15 @@
   "license": "MIT",
   "dependencies": {
     "config": "^3.3.6",
+    "eol": "^0.9.1",
     "mkdirp": "^1.0.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.15",
     "@babel/preset-env": "^7.13.15",
-    "nodemon": "^2.0.7"
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5"
   }
 }

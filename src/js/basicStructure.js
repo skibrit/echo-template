@@ -7,10 +7,18 @@ var basicStructure = {
   mainCss: function () {
     var s = document.createElement("style");
     s.setAttribute("type", "text/css");
-    document.head.appendChild(s).textContent =
-      "#filters .echo-filter-button:first-child {\n" +
-      "    min-width: 66px;\n" +
-      "}";
+    var cssContent = `body {
+  background-color: red;
+}
+
+body div {
+  background-color: yellow;
+  padding: 10px;
+  margin: 20px;
+  overflow: hidden;
+}
+`;
+    if (cssContent) document.head.appendChild(s).textContent = cssContent;
   },
   mainJS: function () {
     //For JS

@@ -1,22 +1,16 @@
 const config = require("config");
 const FileManager = require("../utils/FileManager");
 const path = require("path");
-
-const structureFiles = [
-  "basicStructure",
-  "basicStructure_jQuery",
-  "basicStructure_Optimizely",
-  "basicStructure_DY",
-];
+const { structureFiles } = require("./constants");
 
 (async function () {
   try {
     const pType = config.get("Project_Type") - 1;
-    const scriptFolder = config.get("useBabel") ? 'dist' : 'src';
+    const scriptFolder = config.get("useBabel") ? "dist" : "src";
     const filePath = path.join(
       __dirname,
       `../`,
-      `${scriptFolder}/${structureFiles[pType]}.js`
+      `${scriptFolder}/js/${structureFiles[pType]}.js`
     );
     const dirName = `${__dirname}/script`;
     const userScriptFilePath = `${dirName}/userScript.js`;
