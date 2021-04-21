@@ -7,17 +7,7 @@ var basicStructure = {
   mainCss: function () {
     var s = document.createElement("style");
     s.setAttribute("type", "text/css");
-    var cssContent = `body {
-  background-color: red;
-}
-
-body div {
-  background-color: yellow;
-  padding: 10px;
-  margin: 20px;
-  overflow: hidden;
-}
-`;
+    var cssContent = ``;
     if (cssContent) document.head.appendChild(s).textContent = cssContent;
   },
   mainJS: function () {
