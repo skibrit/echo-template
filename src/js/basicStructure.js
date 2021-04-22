@@ -12,6 +12,7 @@ var basicStructure = {
   },
   mainJS: function () {
     //For JS
+    const abc = ``;
   },
   goalJS: function () {
     //For JS

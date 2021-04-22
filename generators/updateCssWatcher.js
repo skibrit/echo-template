@@ -18,7 +18,7 @@ const { concatenateString } = require("../utils/StringManipulator");
     const cssFileContent = await readFile(cssFilePath);
     // update css on js file
     const updateJsFileContent = jsFileContent.replace(
-      /`[^)]*`/,
+      /`[^=]*`/,
       `\`${cssFileContent}\``
     );
     // write the updated file
